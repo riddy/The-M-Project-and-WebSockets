@@ -22,14 +22,25 @@ if this isn’t working open the file and comment the second line:
 
 now start the app:
 
-cd /path/to/the/app/socket-app/MySocketTest/
+cd /path/to/the/app/MySocketTest/
 espresso server
 
 this prints something like this:
-	
-LOG: Server running at http://127.0.0.1:8000/MySocketTest
+	LOG: Server running at http://127.0.0.1:8000/MySocketTest
 
 and point your browser to the given URL and have fun.
 
+You can run the built version too: /path/to/the/app/MySocketTest/build/1326446955938/index.html
+if the socket-server runs on "localhost"
+
+
 * you find M.SocketRequest in:
 frameworks/The-M-Project/modules/core/foundation/socket-request.js
+
+
+* you find M.ConnectionCheckRequest in
+frameworks/The-M-Project/modules/core/foundation/connectioncheck-request.js
+This is a modification of the M.Request, which checks the network-status before an ajax-request. 
+
+You can hand oer a method to execute if the app is offline 
+and cache the ajax request until you are back online
