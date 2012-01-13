@@ -1,0 +1,75 @@
+.initCss {
+    color: gray;
+    font-style: italic;
+}
+
+.nickname_container {
+    float: left;
+    display: block;
+    width: 60%;
+}
+
+[data-theme="loginBtn"] {
+    float: left;
+    display: block;
+    width: 30%;
+}
+
+[data-theme="disconnectBtn"] {
+    margin-top: 35px;
+}
+
+.statusBar {
+    width: 50%;
+    padding-top: 10px;
+    float: left;
+    height: 33px;
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 15px;
+
+}
+
+.responseTime {
+    width: 40%;
+    float: right;
+    margin-right: 15px;
+    height: 33px;
+    text-align: right;
+    padding-top: 10px;
+
+}
+
+.clearFloat {
+    clear: both;
+    height: 10px;
+}
+
+.networkOnline {
+    background-color: #006633;
+    background-image: linear-gradient(bottom, rgb(10, 122, 10) 24%, rgb(17, 92, 5) 74%);
+    background-image: -o-linear-gradient(bottom, rgb(10, 122, 10) 24%, rgb(17, 92, 5) 74%);
+    background-image: -moz-linear-gradient(bottom, rgb(10, 122, 10) 24%, rgb(17, 92, 5) 74%);
+    background-image: -webkit-linear-gradient(bottom, rgb(10, 122, 10) 24%, rgb(17, 92, 5) 74%);
+    background-image: -ms-linear-gradient(bottom, rgb(10, 122, 10) 24%, rgb(17, 92, 5) 74%);
+
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.24, rgb(10, 122, 10)), color-stop(0.74, rgb(17, 92, 5)));
+    color: white;
+
+    border: 2px solid white;
+}
+
+.networkOffline {
+    background-color: #660000;
+    background-image: linear-gradient(bottom, rgb(122, 10, 10) 24%, rgb(92, 5, 5) 74%);
+    background-image: -o-linear-gradient(bottom, rgb(122, 10, 10) 24%, rgb(92, 5, 5) 74%);
+    background-image: -moz-linear-gradient(bottom, rgb(122, 10, 10) 24%, rgb(92, 5, 5) 74%);
+    background-image: -webkit-linear-gradient(bottom, rgb(122, 10, 10) 24%, rgb(92, 5, 5) 74%);
+    background-image: -ms-linear-gradient(bottom, rgb(122, 10, 10) 24%, rgb(92, 5, 5) 74%);
+
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.24, rgb(122, 10, 10)), color-stop(0.74, rgb(92, 5, 5)));
+    color: white;
+
+    border: 2px solid white;
+}

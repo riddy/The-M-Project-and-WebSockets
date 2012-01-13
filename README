@@ -1,0 +1,35 @@
+Usage of the Example:
+
+if express and socket.io isn’t installed on your machine, you have to install it. We recommend you to use npm.
+
+install express and socket.io globally:	
+npm install -g express
+npm install -g socket.io
+
+or locally:
+	
+npm install express
+npm install socket.io
+
+start the socket server:
+	
+node path/to/the/file/socket-server.js
+
+if this isn’t working open the file and comment the second line:
+	
+//try this one if there are problems to require socket-io or express
+//require.paths.push('/usr/local/lib/node_modules');
+
+now start the app:
+
+cd /path/to/the/app/socket-app/MySocketTest/
+espresso server
+
+this prints something like this:
+	
+LOG: Server running at http://127.0.0.1:8000/MySocketTest
+
+and point your browser to the given URL and have fun.
+
+* you find M.SocketRequest in:
+frameworks/The-M-Project/modules/core/foundation/socket-request.js
